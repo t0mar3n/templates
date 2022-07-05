@@ -6,7 +6,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 40em;
-    @tfsize: 1.2em;
     pre, code {
       font-family: Consolas, Menlo, Monaco, -apple-system, BlinkMacSystemFont, "Segoe UI", Meiryo, monospace;
       white-space: pre-wrap;
@@ -30,18 +29,17 @@
     h5 {
       font-size: 1.0em;
     }
-    .cover {
+    .subh1 {
+      @tfsize: 1.2em;
+      font-size: @tfsize;
       .author {
         text-align: center;
-        font-size: @tfsize;
       }
       .advisor {
         text-align: center;
-        font-size: @tfsize;
       }
       .submitday {
         text-align: center;
-        font-size: @tfsize;
       }
     }
   }
