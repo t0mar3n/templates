@@ -46,7 +46,7 @@ module.exports = {
   },
   onWillParseMarkdown: function(markdown) {
     return new Promise((resolve, reject)=> {
-      // markdown = this.todayMacro(markdown);
+      markdown = this.todayMacro(markdown);
       markdown = this.variableMacro(markdown);
       return resolve(markdown)
     })
