@@ -57,7 +57,7 @@ module.exports = {
       var variables = new Map();
       var def_re = /\(\s*!(\w+)\s*=\s*([、。々〇〻\u3400-\u9FFF\uF900-\uFAFF\u3041-\u3096\u30A1-\u30FA\w\s]+)\s*\)/gm;
       markdown = markdown.replace(def_re, ($0, $1, $2) => {variables.set($1, $2); return "";});
-      var search_re = /\(!(\w+)\)/;
+      var search_re = /\(!(\w+)\)/gm;
       markdown = markdown.replace(search_re, ($0, $1) => {
         if (variables.has($1)) {
           return variables.get($1);
