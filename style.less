@@ -88,4 +88,17 @@
   h4 {
     font-size: 0.8em;
   }
+  counter-set: figcount tablecount;
+
+  .figtitle, .tabletitle {
+    text-align: center;
+  }
+  .figtitle::before {
+    counter-increment: figcount;
+    content: "図" counter(figcount) " ";
+  }
+  .tabletitle::before {
+    counter-increment: tablecount;
+    content: "表" counter(tablecount) " ";
+  }
 }
