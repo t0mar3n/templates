@@ -9,10 +9,9 @@ type int = i64;
 type float = f64;
 
 fn main(){
-    let mut sc = {
-        let (r, w) = (std::io::stdin(), std::io::stdout());
-        IO::new(r.lock(), w.lock())
-    };
+    let (r, w) = (std::io::stdin(), std::io::stdout());
+    let mut sc = IO::new(r.lock(), w.lock());
+    
 }
 
 pub mod scanner {
