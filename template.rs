@@ -5,6 +5,9 @@ use std::collections::*;
 use std::cmp::{max,min};
 use crate::scanner::*;
 
+type int = i64;
+type float = f64;
+
 fn main(){
     let mut sc = {
         let (r, w) = (std::io::stdin(), std::io::stdout());
