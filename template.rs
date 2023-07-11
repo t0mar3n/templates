@@ -7,6 +7,12 @@ use crate::scanner::*;
 
 type int = i64;
 type float = f64;
+type vu = Vec<usize>;
+type vvu = Vec<vu>;
+type vi = Vec<i64>;
+type vvi = Vec<vi>;
+type vf = Vec<f64>;
+type vvf = Vec<vf>;
 
 fn main(){
     let (r, w) = (std::io::stdin(), std::io::stdout());
